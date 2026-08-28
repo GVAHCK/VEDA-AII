@@ -1,0 +1,16 @@
+import type {Review} from '@/lib/types';
+export const demoReview:Review={questions:[
+ {id:'q1',number:'1',text:'Explain the process of photosynthesis.',marks:5,topic:'Photosynthesis'},
+ {id:'q2',number:'2(a)',text:'Name the organelle responsible for cellular respiration.',marks:2,topic:'Cell biology'},
+ {id:'q3',number:'2(b)',text:'State two differences between plant and animal cells.',marks:4,topic:'Cell biology'},
+ {id:'q4',number:'3',text:'Describe how water is transported through a plant.',marks:5,topic:'Transport'},
+ {id:'q5',number:'4',text:'Define osmosis and give one example.',marks:4,topic:'Osmosis'}],
+ answers:[
+ {id:'a1',detectedQuestionNumber:'1',text:'Photosynthesis is the process by which green plants use sunlight, carbon dioxide and water to make glucose. Oxygen is released as a by-product.',pageStart:1,pageEnd:1,boxes:[{x:12,y:18,width:76,height:22}],ocrConfidence:.96,status:'mapped'},
+ {id:'a2',detectedQuestionNumber:'2b',text:'Plant cells have a cell wall and chloroplasts. Animal cells do not have either structure.',pageStart:1,pageEnd:1,boxes:[{x:12,y:48,width:76,height:17}],ocrConfidence:.91,status:'mapped'},
+ {id:'a3',detectedQuestionNumber:'2a',text:'The mitochondrion is known as the powerhouse of the cell and releases energy.',pageStart:2,pageEnd:2,boxes:[{x:12,y:15,width:76,height:14}],ocrConfidence:.94,status:'mapped'},
+ {id:'a4',detectedQuestionNumber:'3',text:'Water enters through root hairs by osmosis, then travels up the xylem vessels to the leaves. Transpiration pull helps it move upward.',pageStart:2,pageEnd:3,boxes:[{x:12,y:39,width:76,height:27},{x:12,y:12,width:76,height:13}],ocrConfidence:.88,status:'mapped'},
+ {id:'a5',text:'A cell contains a nucleus and cytoplasm.',pageStart:3,pageEnd:3,boxes:[{x:12,y:39,width:76,height:12}],ocrConfidence:.7,status:'unmatched'}],
+ mappings:[{questionId:'q1',answerId:'a1',confidence:.96,status:'answered',reason:'Exact question number matched'}, {questionId:'q2',answerId:'a3',confidence:.94,status:'answered',reason:'Fuzzy number match: 2a → 2(a)'}, {questionId:'q3',answerId:'a2',confidence:.91,status:'answered',reason:'Fuzzy number match: 2b → 2(b)'}, {questionId:'q4',answerId:'a4',confidence:.89,status:'answered',reason:'Exact numbering + semantic continuation on page 3'}, {questionId:'q5',confidence:0,status:'unanswered',reason:'No answer region found'}],
+ grades:{q1:{score:5,maxScore:5,strengths:['Complete definition','Correct inputs and product'],mistakes:[],feedback:'Excellent and precise explanation.'},q2:{score:2,maxScore:2,strengths:['Correct organelle identified'],mistakes:[],feedback:'Correct answer.'},q3:{score:4,maxScore:4,strengths:['Two valid differences'],mistakes:[],feedback:'Clear comparison.'},q4:{score:4,maxScore:5,strengths:['Correct xylem pathway'],mistakes:['Could explain cohesion-tension in more detail'],feedback:'Strong answer with a minor omission.'},q5:{score:0,maxScore:4,strengths:[],mistakes:['No response detected'],feedback:'Question was skipped.'}},
+ overall:{score:15,maxScore:20,feedback:'Strong understanding of cell biology and photosynthesis. Revisit osmosis and develop explanations of transport mechanisms.',weakTopics:['Osmosis','Transport mechanisms'],strongTopics:['Cell biology','Photosynthesis']}};

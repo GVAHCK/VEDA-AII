@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base { * { @apply border-slate-200; } body { @apply bg-slate-50 text-ink antialiased; } }
+@layer components { .panel { @apply rounded-2xl border bg-white shadow-card; } .label { @apply text-[11px] font-bold uppercase tracking-[.13em] text-slate-400; } .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition; } }

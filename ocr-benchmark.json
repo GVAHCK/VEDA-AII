@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-08-27T12:09:04.224Z",
+  "referenceAvailable": false,
+  "candidates": [
+    {
+      "name": "Raw Tesseract",
+      "status": "unavailable",
+      "wer": null,
+      "cer": null
+    },
+    {
+      "name": "Enhanced Tesseract",
+      "status": "unavailable",
+      "wer": null,
+      "cer": null
+    },
+    {
+      "name": "TrOCR",
+      "status": "unavailable",
+      "wer": null,
+      "cer": null
+    },
+    {
+      "name": "Donut",
+      "status": "unavailable",
+      "wer": null,
+      "cer": null
+    },
+    {
+      "name": "Hybrid output",
+      "status": "unavailable",
+      "wer": null,
+      "cer": null
+    }
+  ]
+}

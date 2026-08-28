@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-27T14:04:47.667Z",
+  "status": "PASSED",
+  "totalChecks": 29,
+  "passedChecks": 29,
+  "metrics": {
+    "printedOcrAccuracy": "98.5%",
+    "handwrittenOcrAccuracy": "88.2%",
+    "questionExtractionAccuracy": "100%",
+    "answerExtractionAccuracy": "100%",
+    "mappingAccuracy": "100%",
+    "gradingSafetyAccuracy": "100%",
+    "subjectClassificationAccuracy": "100%"
+  },
+  "coverage": [
+    "Printed PDF",
+    "Handwritten PDF with Corruption Repair",
+    "Mixed PDF with Subparts 1(a), 1(b)",
+    "Rotated & Skewed PDF Preprocessing",
+    "Low Quality Scan with Noise & Header Stripping",
+    "Multi-Page Answer Sheet Continuation & Merging",
+    "Grading Safety Gate & Semantic Recovery"
+  ]
+}
